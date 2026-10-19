@@ -1,0 +1,216 @@
+{
+ "format_version": 1,
+ "outputs": [
+  {
+   "file": "2017/sarpanch_winners.parquet",
+   "sha256": "b67876a6bf9b316660e35bd5ed0aa722a951220a28bd1ecc894b9653a200c7ae",
+   "rows": 6640,
+   "schema": [
+    {
+     "name": "year",
+     "type": "int64"
+    },
+    {
+     "name": "district",
+     "type": "large_string"
+    },
+    {
+     "name": "block_serial",
+     "type": "large_string"
+    },
+    {
+     "name": "block",
+     "type": "large_string"
+    },
+    {
+     "name": "gram_panchayat",
+     "type": "large_string"
+    },
+    {
+     "name": "winner",
+     "type": "large_string"
+    },
+    {
+     "name": "winner_cell_merged",
+     "type": "bool"
+    },
+    {
+     "name": "source_file",
+     "type": "large_string"
+    },
+    {
+     "name": "source_page",
+     "type": "int64"
+    },
+    {
+     "name": "source_row",
+     "type": "int64"
+    },
+    {
+     "name": "winner_is_note",
+     "type": "bool"
+    }
+   ]
+  },
+  {
+   "file": "2022/sarpanch_winners.parquet",
+   "sha256": "8cbfc849c80dadf68687ad72a1466ee0558441f36f5119575549295983bc28a3",
+   "rows": 6794,
+   "schema": [
+    {
+     "name": "year",
+     "type": "int64"
+    },
+    {
+     "name": "district",
+     "type": "large_string"
+    },
+    {
+     "name": "block_serial",
+     "type": "large_string"
+    },
+    {
+     "name": "block",
+     "type": "large_string"
+    },
+    {
+     "name": "gram_panchayat",
+     "type": "large_string"
+    },
+    {
+     "name": "winner",
+     "type": "large_string"
+    },
+    {
+     "name": "winner_cell_merged",
+     "type": "bool"
+    },
+    {
+     "name": "source_file",
+     "type": "large_string"
+    },
+    {
+     "name": "source_page",
+     "type": "int64"
+    },
+    {
+     "name": "source_row",
+     "type": "int64"
+    },
+    {
+     "name": "winner_is_note",
+     "type": "bool"
+    }
+   ]
+  }
+ ],
+ "checks": [
+  {
+   "check": "2022_district_counts_vs_sec",
+   "appeals_to": "external",
+   "status": "pass",
+   "blocking": true,
+   "detail": "Elected-sarpanch rows per district against the SEC's district-wise sarpanch reservation table of 8 Jan 2022 (read with pdftotext). 6,794 rows against 6,794 seats; 0 district(s) differ; unmatched names [].",
+   "differing": []
+  },
+  {
+   "check": "2022_key_unique",
+   "appeals_to": "internal",
+   "status": "warn",
+   "blocking": false,
+   "detail": "3 (district, block, GP) keys appear more than once (6 rows), kept as printed.",
+   "duplicate_rows": [
+    {
+     "district": "Bhadrak",
+     "block": "Dhamnagar",
+     "gram_panchayat": "Mustafapur",
+     "winner": "Jisnara Bibi",
+     "source_page": 27
+    },
+    {
+     "district": "Bhadrak",
+     "block": "Dhamnagar",
+     "gram_panchayat": "Khadipada",
+     "winner": "Sasmita Ghadai",
+     "source_page": 27
+    },
+    {
+     "district": "Bhadrak",
+     "block": "Dhamnagar",
+     "gram_panchayat": "Khadipada",
+     "winner": "Sasmita Ghadai",
+     "source_page": 27
+    },
+    {
+     "district": "Bhadrak",
+     "block": "Dhamnagar",
+     "gram_panchayat": "Mustafapur",
+     "winner": "Jisnara Bibi",
+     "source_page": 27
+    },
+    {
+     "district": "Nuapada",
+     "block": "Komna",
+     "gram_panchayat": "Tikrapada",
+     "winner": "Jamuna Harijan",
+     "source_page": 177
+    },
+    {
+     "district": "Nuapada",
+     "block": "Komna",
+     "gram_panchayat": "Tikrapada",
+     "winner": "Jamuna Harijan",
+     "source_page": 177
+    }
+   ]
+  },
+  {
+   "check": "2022_sec_table_women_share",
+   "appeals_to": "external",
+   "status": "pass",
+   "blocking": false,
+   "detail": "In the SEC district table, women's seats (SCW + STW + RW) are 3,475 of 6,794 (51.15%); the Odisha Gram Panchayat Act reserves at least half for women. Backward-class seats: 0 (no BC column; the 2021 High Court order). This checks the reference table, not a per-GP file.",
+   "share": 0.5115
+  },
+  {
+   "check": "2017_district_counts_vs_sec",
+   "appeals_to": "external",
+   "status": "warn",
+   "blocking": false,
+   "detail": "Elected-sarpanch rows per district against GPs in the 2017 information book: 6,640 rows against 6,801 GPs; 4 district(s) differ. Sambalpur's link on the SEC site serves the Subarnapur file, and Malkangiri's file omits its seventh block; both are source gaps.",
+   "differing": [
+    {
+     "district": "ganjam",
+     "reference": 503,
+     "rows": 499,
+     "diff": -4
+    },
+    {
+     "district": "malkangiri",
+     "reference": 111,
+     "rows": 93,
+     "diff": -18
+    },
+    {
+     "district": "puri",
+     "reference": 268,
+     "rows": 267,
+     "diff": -1
+    },
+    {
+     "district": "sambalpur",
+     "reference": 138,
+     "rows": 0,
+     "diff": -138
+    }
+   ]
+  },
+  {
+   "check": "2022_hand_check",
+   "appeals_to": "external",
+   "status": "not_run",
+   "blocking": false,
+   "detail": "0 of 30 sampled rows compared by eye with the PDF page; 0 disagree."
+  }
+ ]
+}
