@@ -120,6 +120,15 @@ A downloaded file byte-identical to one already saved is not kept; its row in
 the fetch log names the kept copy in `duplicate_of`. Files are written only
 inside `data/raw/`.
 
+`data/raw/sec/files/unlisted/` holds six SEC PDFs that came from
+[in-rolls/local_elections](https://github.com/in-rolls/local_elections)
+(`data/odisha/raw/`), where nobody recorded a download URL. Their fetch-log
+rows name that repository and commit in `source` and leave `url` blank. They
+are 2017 reservation counts by district for sarpanch, ward member, panchayat
+samiti member and chairman, the 2017 PRI information book, and the 2013-15
+ULB information book. The SEC's `table_064` page links a file with the same
+name as the last one; the bytes have not been compared.
+
 `make check` needs `pdftotext` (poppler). The SEC and district sites refuse
 connections from outside India; the collectors go through a SOCKS5 proxy set
 in `ODISHA_PROXY` (default `socks5h://localhost:1080`).
