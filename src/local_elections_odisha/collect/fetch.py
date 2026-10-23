@@ -19,14 +19,17 @@ import requests
 ROOT = Path(__file__).resolve().parents[3]
 RAW = ROOT / "data" / "raw"
 LOG = RAW / "fetch_log.csv"
+# The first six are local_elections docs/layout.md's required columns.
 FIELDS = [
     "path",
     "url",
-    "source",
     "sha256",
     "bytes",
-    "status",
     "fetched_at_utc",
+    "method",
+    "copied_from",
+    "source",
+    "status",
     "duplicate_of",
 ]
 HEADERS = {"User-Agent": "Mozilla/5.0 (research data collection; in-rolls)"}
@@ -108,6 +111,8 @@ def record(rel, url, source, status):
                 "bytes": size,
                 "status": status,
                 "fetched_at_utc": datetime.now(UTC).strftime("%Y-%m-%dT%H:%M:%SZ"),
+                "method": "live",
+                "copied_from": "",
                 "duplicate_of": kept if kept != rel else "",
             }
         )

@@ -2,7 +2,7 @@
  "format_version": 1,
  "outputs": [
   {
-   "file": "2017/sarpanch_winners.parquet",
+   "file": "release/2017/sarpanch_winners.parquet",
    "sha256": "b67876a6bf9b316660e35bd5ed0aa722a951220a28bd1ecc894b9653a200c7ae",
    "rows": 6640,
    "schema": [
@@ -53,7 +53,7 @@
    ]
   },
   {
-   "file": "2022/sarpanch_winners.parquet",
+   "file": "release/2022/sarpanch_winners.parquet",
    "sha256": "8cbfc849c80dadf68687ad72a1466ee0558441f36f5119575549295983bc28a3",
    "rows": 6794,
    "schema": [

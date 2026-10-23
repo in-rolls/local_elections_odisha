@@ -30,8 +30,8 @@ README = ROOT / "README.md"
 FETCH_LOG = DATA / "raw/fetch_log.csv"
 HAND_CHECK = DATA / "checks/hand_check_2022.csv"
 OUTPUTS = [
-    "2017/sarpanch_winners.parquet",
-    "2022/sarpanch_winners.parquet",
+    "release/2017/sarpanch_winners.parquet",
+    "release/2022/sarpanch_winners.parquet",
 ]
 KEY = ["district", "block", "gram_panchayat"]
 
@@ -63,7 +63,7 @@ def counts_vs(df, reference):
 
 
 def checks_2022():
-    df = pd.read_parquet(DATA / "2022/sarpanch_winners.parquet")
+    df = pd.read_parquet(DATA / "release/2022/sarpanch_winners.parquet")
     seats = ref.sarpanch_reservation_2022()
     table, unknown = counts_vs(df, {d: v["TOTAL"] for d, v in seats.items()})
     off = table[table["diff"] != 0]
@@ -111,7 +111,7 @@ def checks_2022():
 
 
 def checks_2017():
-    df = pd.read_parquet(DATA / "2017/sarpanch_winners.parquet")
+    df = pd.read_parquet(DATA / "release/2017/sarpanch_winners.parquet")
     table, unknown = counts_vs(df, ref.gram_panchayats_2017())
     off = table[table["diff"] != 0]
     return [

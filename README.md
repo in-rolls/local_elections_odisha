@@ -52,8 +52,8 @@ Commission (SEC) winner lists print no category. Where the reservation exists:
 
 | File | Rows | Each row is |
 |---|---:|---|
-| [2017/sarpanch_winners.parquet](data/2017/sarpanch_winners.parquet) | 6,640 | a GP in the 2017 election and its elected sarpanch |
-| [2022/sarpanch_winners.parquet](data/2022/sarpanch_winners.parquet) | 6,794 | a GP in the 2022 election and its elected sarpanch |
+| [release/2017/sarpanch_winners.parquet](data/release/2017/sarpanch_winners.parquet) | 6,640 | a GP in the 2017 election and its elected sarpanch |
+| [release/2022/sarpanch_winners.parquet](data/release/2022/sarpanch_winners.parquet) | 6,794 | a GP in the 2022 election and its elected sarpanch |
 
 Columns: `year`, `district` (as printed in the district heading),
 `block_serial` and `block` (Panchayat Samiti, as printed), `gram_panchayat`,
@@ -80,7 +80,7 @@ Known defects in the sources, kept visible rather than repaired:
 ```python
 import pandas as pd
 
-w22 = pd.read_parquet("data/2022/sarpanch_winners.parquet")
+w22 = pd.read_parquet("data/release/2022/sarpanch_winners.parquet")
 w22.groupby("district").size()
 w22[w22["winner_is_note"]]
 ```
@@ -120,14 +120,15 @@ A downloaded file byte-identical to one already saved is not kept; its row in
 the fetch log names the kept copy in `duplicate_of`. Files are written only
 inside `data/raw/`.
 
-`data/raw/sec/files/unlisted/` holds six SEC PDFs that came from
-[in-rolls/local_elections](https://github.com/in-rolls/local_elections)
+`data/raw/sec/files/unlisted/` holds six SEC PDFs that came from [in-
+rolls/local_elections](https://github.com/in-rolls/local_elections)
 (`data/odisha/raw/`), where nobody recorded a download URL. Their fetch-log
-rows name that repository and commit in `source` and leave `url` blank. They
-are 2017 reservation counts by district for sarpanch, ward member, panchayat
-samiti member and chairman, the 2017 PRI information book, and the 2013-15
-ULB information book. The SEC's `table_064` page links a file with the same
-name as the last one; the bytes have not been compared.
+rows have `method=copy`, name the repository, commit and path in `copied_from`,
+and leave `url` blank. They are 2017 reservation counts by district for
+sarpanch, ward member, panchayat samiti member and chairman, the 2017 PRI
+information book, and the 2013-15 ULB information book. The SEC's `table_064`
+page links a file with the same name as the last one; the bytes have not been
+compared.
 
 `make check` needs `pdftotext` (poppler). The SEC and district sites refuse
 connections from outside India; the collectors go through a SOCKS5 proxy set

@@ -24,7 +24,7 @@ import re
 import pandas as pd
 import pdfplumber
 
-from local_elections_odisha.parse.common import DATA, RAW, clean, fold, rel
+from local_elections_odisha.parse.common import RAW, RELEASE, clean, fold, rel
 
 SOURCES = {
     2022: sorted((RAW / "sec/files/table_057").glob("*SARPANCH.pdf")),
@@ -120,8 +120,8 @@ def main():
             where = dropped.groupby("source_page").size().to_dict()
             print(year, "dropped", len(dropped), "reprinted rows, by page:", where)
         df["winner_is_note"] = df["winner"].fillna("").str.contains(NOTE)
-        (DATA / str(year)).mkdir(exist_ok=True)
-        df.to_parquet(DATA / f"{year}/sarpanch_winners.parquet", index=False)
+        (RELEASE / str(year)).mkdir(parents=True, exist_ok=True)
+        df.to_parquet(RELEASE / f"{year}/sarpanch_winners.parquet", index=False)
         print(year, len(df), "rows,", df["district"].nunique(), "districts")
 
 

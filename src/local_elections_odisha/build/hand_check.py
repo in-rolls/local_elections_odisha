@@ -24,7 +24,7 @@ def main():
         rows = list(csv.DictReader(HAND_CHECK.open(encoding="utf-8")))
         if any(r["matches_pdf"] for r in rows):
             raise SystemExit(f"{HAND_CHECK} already has answers; not overwriting")
-    df = pd.read_parquet(DATA / "2022/sarpanch_winners.parquet")
+    df = pd.read_parquet(DATA / "release/2022/sarpanch_winners.parquet")
     sample = df.sample(30, random_state=SEED).sort_values("source_page")
     sample = sample[[*COLUMNS, "source_row"]].assign(matches_pdf="")
     HAND_CHECK.parent.mkdir(exist_ok=True)
