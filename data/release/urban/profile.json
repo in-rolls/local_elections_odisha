@@ -1,0 +1,29 @@
+{
+  "winner_rows": 294,
+  "body_year_counts": {
+    "2014_Bhubaneswar Municipal Corporation": 67,
+    "2014_Cuttack Municipal Corporation": 59,
+    "2022_Berhampur Municipal Corporation": 42,
+    "2022_Bhubaneswar Municipal Corporation": 67,
+    "2022_Cuttack Municipal Corporation": 59
+  },
+  "winner_woman_recorded": 0,
+  "reserved_woman_recorded": 168,
+  "reserved_woman_2022": {
+    "Berhampur Municipal Corporation": 21,
+    "Bhubaneswar Municipal Corporation": 34,
+    "Cuttack Municipal Corporation": 30
+  },
+  "affidavit_document_links": 365,
+  "affidavit_offices": {
+    "mayor": 12,
+    "ward_councilor": 353
+  },
+  "affidavit_ward_coverage": 67,
+  "affidavit_downloads": {
+    "not_attempted": 310,
+    "saved": 55
+  },
+  "affidavit_unique_saved_files": 54,
+  "validated_geographic_transitions": 0
+}

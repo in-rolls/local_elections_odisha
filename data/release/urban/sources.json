@@ -1,0 +1,1048 @@
+{
+  "inputs": [
+    {
+      "path": "data/manual/urban/corporators_2014_transcription.csv",
+      "sha256": "948f11b7523c56967600c95e66d668cb3cd66862065e06108a651652e2e96293",
+      "bytes": 5523,
+      "acquisition": null
+    },
+    {
+      "path": "data/manual/urban/transcription_receipt.json",
+      "sha256": "5aa9a64807c56f4171c1e9edfc2600b6257210c035dd018f74e1b866268981cc",
+      "bytes": 475,
+      "acquisition": null
+    },
+    {
+      "path": "data/raw/sec/files/unlisted/INFORMATION-OF-G.E-TO-ULB-2013-14-14-15-1.pdf",
+      "sha256": "1d68e46d5d00cefd47caea634219cea47b9e20434556b95fce8435a29f98f3b1",
+      "bytes": 3231793,
+      "acquisition": {
+        "path": "data/raw/sec/files/unlisted/INFORMATION-OF-G.E-TO-ULB-2013-14-14-15-1.pdf",
+        "url": "",
+        "sha256": "1d68e46d5d00cefd47caea634219cea47b9e20434556b95fce8435a29f98f3b1",
+        "bytes": "3231793",
+        "fetched_at_utc": "",
+        "method": "copy",
+        "copied_from": "in-rolls/local_elections@97fc165af836:data/odisha/raw/INFORMATION-OF-G.E-TO-ULB-2013-14-14-15-1.pdf",
+        "source": "",
+        "status": "",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_018.pdf",
+      "sha256": "e05967a8de7acaf97835bcdefd47038fba7bfb174a95ea084156559ff60a15f6",
+      "bytes": 6468047,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_018.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220313_220732.pdf",
+        "sha256": "e05967a8de7acaf97835bcdefd47038fba7bfb174a95ea084156559ff60a15f6",
+        "bytes": "6468047",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_019.pdf",
+      "sha256": "fb05e2b7efa90071704f3e72c8c8fea3eb95971e717b08c91b826a063775227b",
+      "bytes": 6388820,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_019.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220313_220703.pdf",
+        "sha256": "fb05e2b7efa90071704f3e72c8c8fea3eb95971e717b08c91b826a063775227b",
+        "bytes": "6388820",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_020.pdf",
+      "sha256": "8c32017af929cc7e99debddfad51c7344ca5a0e5e12c8d7283f2ba3a1dcd14bf",
+      "bytes": 6426895,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_020.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220313_220628.pdf",
+        "sha256": "8c32017af929cc7e99debddfad51c7344ca5a0e5e12c8d7283f2ba3a1dcd14bf",
+        "bytes": "6426895",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_033.pdf",
+      "sha256": "2d1d092ad6a97a5affcaaa8af6a26553cbfa01d64544417a77e7af3356d50973",
+      "bytes": 3325326,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_033.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220313_215917.pdf",
+        "sha256": "2d1d092ad6a97a5affcaaa8af6a26553cbfa01d64544417a77e7af3356d50973",
+        "bytes": "3325326",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_050.pdf",
+      "sha256": "0766e40d6981cc5e74231a3921f8b9bab02cc6c351151249b346c8a0b320c5d0",
+      "bytes": 6685836,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_050.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220313_161847.pdf",
+        "sha256": "0766e40d6981cc5e74231a3921f8b9bab02cc6c351151249b346c8a0b320c5d0",
+        "bytes": "6685836",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_060.pdf",
+      "sha256": "f8a2bc99e787ce062b3dc1e2a8d9d5cf97f1a0f67541bfaa68bf4b239ef75e9b",
+      "bytes": 896450,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_060.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220313_155459.PDF",
+        "sha256": "f8a2bc99e787ce062b3dc1e2a8d9d5cf97f1a0f67541bfaa68bf4b239ef75e9b",
+        "bytes": "896450",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_063.pdf",
+      "sha256": "b35e297405037328f29625014d2e01365aa781cfce7c252c3b4489417ec519c5",
+      "bytes": 1009505,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_063.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220313_154745.PDF",
+        "sha256": "b35e297405037328f29625014d2e01365aa781cfce7c252c3b4489417ec519c5",
+        "bytes": "1009505",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_067.pdf",
+      "sha256": "9d279b4d492ab242ac4a08aa2d088902c9c1d8adfed27ffa219fe39ebd0b3e22",
+      "bytes": 8839356,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_067.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220313_154311.pdf",
+        "sha256": "9d279b4d492ab242ac4a08aa2d088902c9c1d8adfed27ffa219fe39ebd0b3e22",
+        "bytes": "8839356",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_078.pdf",
+      "sha256": "843eaa50506986e8391bbb973c7b9d6fdf2e53f5a20cae3345b503f62ba85de1",
+      "bytes": 1025228,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_078.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220313_153134.PDF",
+        "sha256": "843eaa50506986e8391bbb973c7b9d6fdf2e53f5a20cae3345b503f62ba85de1",
+        "bytes": "1025228",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_079.pdf",
+      "sha256": "b89d1bf1849880e61e0fc1509210ff081e910a7ffe7b5abe9ea5afdbd547ed79",
+      "bytes": 2010423,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_079.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220313_153034.PDF",
+        "sha256": "b89d1bf1849880e61e0fc1509210ff081e910a7ffe7b5abe9ea5afdbd547ed79",
+        "bytes": "2010423",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_086.pdf",
+      "sha256": "dfe3ea756b71b6b17c7bab9b957e2af58f8955b518ad548b12b3c58cb4542d74",
+      "bytes": 1152406,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_086.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220313_151456.PDF",
+        "sha256": "dfe3ea756b71b6b17c7bab9b957e2af58f8955b518ad548b12b3c58cb4542d74",
+        "bytes": "1152406",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_087.pdf",
+      "sha256": "82a38198014f5ce83f21b2e276f29c8d73317d5266e3800b8cd7d3e1730c809f",
+      "bytes": 1070777,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_087.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220313_151325.PDF",
+        "sha256": "82a38198014f5ce83f21b2e276f29c8d73317d5266e3800b8cd7d3e1730c809f",
+        "bytes": "1070777",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_090.pdf",
+      "sha256": "1df5c1fe0662a9f36bc384b44b3f81579220b09a0b37e8761fbf28948f0228ae",
+      "bytes": 937581,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_090.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220313_151023.PDF",
+        "sha256": "1df5c1fe0662a9f36bc384b44b3f81579220b09a0b37e8761fbf28948f0228ae",
+        "bytes": "937581",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_104.pdf",
+      "sha256": "96eecfe4d838c4af5029a540747b2940b6f2dedc0a273b1989916b546f5dc315",
+      "bytes": 825339,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_104.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220313_145318.PDF",
+        "sha256": "96eecfe4d838c4af5029a540747b2940b6f2dedc0a273b1989916b546f5dc315",
+        "bytes": "825339",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_105.pdf",
+      "sha256": "bac85fd057ce3aec7163df14c01218ebc0f7f7f190ae726db2a6d7462cb28e7e",
+      "bytes": 793799,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_105.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220313_145234.PDF",
+        "sha256": "bac85fd057ce3aec7163df14c01218ebc0f7f7f190ae726db2a6d7462cb28e7e",
+        "bytes": "793799",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_111.pdf",
+      "sha256": "c8b03f887c6ff28166a95d494f75a1ea1d15d11e3a5856adebbbc7eded2097aa",
+      "bytes": 8101697,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_111.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220313_074517.pdf",
+        "sha256": "c8b03f887c6ff28166a95d494f75a1ea1d15d11e3a5856adebbbc7eded2097aa",
+        "bytes": "8101697",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_119.pdf",
+      "sha256": "5e52878af7c914b8d1ff73d3c75754b991869e9a285bd83704b82fa051c2a69f",
+      "bytes": 884330,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_119.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220313_073933.PDF",
+        "sha256": "5e52878af7c914b8d1ff73d3c75754b991869e9a285bd83704b82fa051c2a69f",
+        "bytes": "884330",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_127.pdf",
+      "sha256": "f3b445dd16bb2081b00e2ea07fc109333ec7dce221bbd904b2581cbb0256c95a",
+      "bytes": 4384248,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_127.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220313_073304.pdf",
+        "sha256": "f3b445dd16bb2081b00e2ea07fc109333ec7dce221bbd904b2581cbb0256c95a",
+        "bytes": "4384248",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_132.pdf",
+      "sha256": "d2abb92bd1043ab19c3d2abf3c5e4023794628ee1141c91b1e2dc8fda476eac4",
+      "bytes": 6941320,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_132.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220313_072937.pdf",
+        "sha256": "d2abb92bd1043ab19c3d2abf3c5e4023794628ee1141c91b1e2dc8fda476eac4",
+        "bytes": "6941320",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_135.pdf",
+      "sha256": "dd8b3b28a59af83b64791ad1b9b11a5179adbd400be349df20b716e538a39e1c",
+      "bytes": 1056905,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_135.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220313_072640.PDF",
+        "sha256": "dd8b3b28a59af83b64791ad1b9b11a5179adbd400be349df20b716e538a39e1c",
+        "bytes": "1056905",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_146.pdf",
+      "sha256": "687d094116adeefbb44e482223f0129552e6f8011419579b0462c40ad8d73e1e",
+      "bytes": 1004136,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_146.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220313_072110.PDF",
+        "sha256": "687d094116adeefbb44e482223f0129552e6f8011419579b0462c40ad8d73e1e",
+        "bytes": "1004136",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_156.pdf",
+      "sha256": "99c79c3587fa24bf462fea17809b27d1fc4a047044edb6a3e151a3e86a67716e",
+      "bytes": 5540148,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_156.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220313_071641.pdf",
+        "sha256": "99c79c3587fa24bf462fea17809b27d1fc4a047044edb6a3e151a3e86a67716e",
+        "bytes": "5540148",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_160.pdf",
+      "sha256": "53cc25b4df90c42c8e2a7dc4274b088c6aa3e3f8f4425e48469bc1ace592cc4d",
+      "bytes": 6373174,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_160.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220313_071445.pdf",
+        "sha256": "53cc25b4df90c42c8e2a7dc4274b088c6aa3e3f8f4425e48469bc1ace592cc4d",
+        "bytes": "6373174",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_165.pdf",
+      "sha256": "a5254218abe7fa44dac8ec053f97c7fa49d2e1e41eb6300288185648c7b8a87e",
+      "bytes": 3338715,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_165.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220312_201207.pdf",
+        "sha256": "a5254218abe7fa44dac8ec053f97c7fa49d2e1e41eb6300288185648c7b8a87e",
+        "bytes": "3338715",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_176.pdf",
+      "sha256": "1c739319ec4cf379996ac5d33e8398accb898255e423c9b2f34363dc6c09fabc",
+      "bytes": 4367667,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_176.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220312_195720.pdf",
+        "sha256": "1c739319ec4cf379996ac5d33e8398accb898255e423c9b2f34363dc6c09fabc",
+        "bytes": "4367667",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_180.pdf",
+      "sha256": "d37437a1f5dc9d4647aedb868a96c9403682510bc158386c7e2b7d37b2a5cbc7",
+      "bytes": 5532168,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_180.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220312_195445.pdf",
+        "sha256": "d37437a1f5dc9d4647aedb868a96c9403682510bc158386c7e2b7d37b2a5cbc7",
+        "bytes": "5532168",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_190.pdf",
+      "sha256": "f49915376f1bacc003033c942643261e63e613824662598d2d9d2e8ec1d9f1fc",
+      "bytes": 4711075,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_190.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220312_194728.pdf",
+        "sha256": "f49915376f1bacc003033c942643261e63e613824662598d2d9d2e8ec1d9f1fc",
+        "bytes": "4711075",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_198.pdf",
+      "sha256": "1d6ef0c0ef73a591841dfcc340365a4a02d982734ec82b5369e958aa00559182",
+      "bytes": 5348617,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_198.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220312_194135.pdf",
+        "sha256": "1d6ef0c0ef73a591841dfcc340365a4a02d982734ec82b5369e958aa00559182",
+        "bytes": "5348617",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_218.pdf",
+      "sha256": "7c64e8fc628c59ab8b430cd275d1f304ecadb4a0a271f715a1443cf41f475f24",
+      "bytes": 12335660,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_218.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220312_192310.pdf",
+        "sha256": "7c64e8fc628c59ab8b430cd275d1f304ecadb4a0a271f715a1443cf41f475f24",
+        "bytes": "12335660",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_219.pdf",
+      "sha256": "e285528e37e67987dead300ce4dc7fd2a6f3a327a98ee93f20758c61d29421be",
+      "bytes": 12190746,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_219.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220312_192159.pdf",
+        "sha256": "e285528e37e67987dead300ce4dc7fd2a6f3a327a98ee93f20758c61d29421be",
+        "bytes": "12190746",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_231.pdf",
+      "sha256": "eb1dc43304babfe43c4a3f15475578894347c53505d138871c0ab4c7e827278d",
+      "bytes": 10925447,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_231.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220312_191100.pdf",
+        "sha256": "eb1dc43304babfe43c4a3f15475578894347c53505d138871c0ab4c7e827278d",
+        "bytes": "10925447",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_232.pdf",
+      "sha256": "1834b7871e99b641deb6d6fd96e5f869df362e2cd8bc55bbb6cda24b204693bd",
+      "bytes": 10697450,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_232.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220312_190829.pdf",
+        "sha256": "1834b7871e99b641deb6d6fd96e5f869df362e2cd8bc55bbb6cda24b204693bd",
+        "bytes": "10697450",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_234.pdf",
+      "sha256": "b54c183c1b65ec6741ca488ba35bb62dc898bdb2715d63290b67a63738c0052f",
+      "bytes": 1398380,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_234.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220312_190707.PDF",
+        "sha256": "b54c183c1b65ec6741ca488ba35bb62dc898bdb2715d63290b67a63738c0052f",
+        "bytes": "1398380",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_242.pdf",
+      "sha256": "18e63cfe662a776905ab8cc2d9424d0bfb7e324cde9feb64a7fb24e804f8b241",
+      "bytes": 6758894,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_242.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220312_185910.pdf",
+        "sha256": "18e63cfe662a776905ab8cc2d9424d0bfb7e324cde9feb64a7fb24e804f8b241",
+        "bytes": "6758894",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_254.pdf",
+      "sha256": "d9592077e6a8fe2146c94a2174216c13a1d6fa8e5d80f4a70f3b2b9093cb9e78",
+      "bytes": 3897723,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_254.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220312_184836.pdf",
+        "sha256": "d9592077e6a8fe2146c94a2174216c13a1d6fa8e5d80f4a70f3b2b9093cb9e78",
+        "bytes": "3897723",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_256.pdf",
+      "sha256": "3f4637cb0b75d0a01037e107e0a85311d040976ae1fe78d5c1067f5272b5e8af",
+      "bytes": 5713813,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_256.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220312_184709.pdf",
+        "sha256": "3f4637cb0b75d0a01037e107e0a85311d040976ae1fe78d5c1067f5272b5e8af",
+        "bytes": "5713813",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_258.pdf",
+      "sha256": "4fa7f704c6a201f25dc98cb653d709edec61da383f386723fa5d6e743e346d3f",
+      "bytes": 7117200,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_258.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220312_184542.pdf",
+        "sha256": "4fa7f704c6a201f25dc98cb653d709edec61da383f386723fa5d6e743e346d3f",
+        "bytes": "7117200",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_263.pdf",
+      "sha256": "a2155eb37f48ace695a1f9de761dcec674d98f71b0266a4156a6f6dbfcf9ac30",
+      "bytes": 5431408,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_263.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220312_183742.pdf",
+        "sha256": "a2155eb37f48ace695a1f9de761dcec674d98f71b0266a4156a6f6dbfcf9ac30",
+        "bytes": "5431408",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_273.pdf",
+      "sha256": "92fac63e843c008aa14b7661b4c4f01e213002175a12663a1cb2765950bac0a8",
+      "bytes": 2750087,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_273.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220312_182753.pdf",
+        "sha256": "92fac63e843c008aa14b7661b4c4f01e213002175a12663a1cb2765950bac0a8",
+        "bytes": "2750087",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_280.pdf",
+      "sha256": "eabbe23b0ec98cadd6cc6561201a088dc4964c225a6fc5c498a233ea3d3daaeb",
+      "bytes": 8002933,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_280.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220312_182309.pdf",
+        "sha256": "eabbe23b0ec98cadd6cc6561201a088dc4964c225a6fc5c498a233ea3d3daaeb",
+        "bytes": "8002933",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_281.pdf",
+      "sha256": "640e273c7fae5008730d64924e429a81ff2ba6e12f23d7c9dd029b058b1c9117",
+      "bytes": 7340102,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_281.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220312_182149.pdf",
+        "sha256": "640e273c7fae5008730d64924e429a81ff2ba6e12f23d7c9dd029b058b1c9117",
+        "bytes": "7340102",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_298.pdf",
+      "sha256": "d47dfb7049556c357a97834b7b5f94b16ff8984b9ec7dfcca3e92af24eb3d231",
+      "bytes": 5612084,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_298.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220312_180241.pdf",
+        "sha256": "d47dfb7049556c357a97834b7b5f94b16ff8984b9ec7dfcca3e92af24eb3d231",
+        "bytes": "5612084",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_299.pdf",
+      "sha256": "75fb3cc2820e4b0fc765fa0835ba7e75770fb1ba37499639060259c625587a31",
+      "bytes": 5612100,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_299.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220312_180134.pdf",
+        "sha256": "75fb3cc2820e4b0fc765fa0835ba7e75770fb1ba37499639060259c625587a31",
+        "bytes": "5612100",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_302.pdf",
+      "sha256": "609f90426c3d7676e78d1f9eb7201ee618e032c00fd10910d4f689a4d6686ba1",
+      "bytes": 4903125,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_302.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220312_175731.pdf",
+        "sha256": "609f90426c3d7676e78d1f9eb7201ee618e032c00fd10910d4f689a4d6686ba1",
+        "bytes": "4903125",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_304.pdf",
+      "sha256": "3d3d8b019a14301d7d05e2f19cd5e70d0221f6a58fc78a72269c3950109bf2f4",
+      "bytes": 8532782,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_304.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220312_175556.pdf",
+        "sha256": "3d3d8b019a14301d7d05e2f19cd5e70d0221f6a58fc78a72269c3950109bf2f4",
+        "bytes": "8532782",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_306.pdf",
+      "sha256": "f73725f005518ecc689d4878842b8102453ef90e491fe189f8d321d6a83f89ae",
+      "bytes": 8269318,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_306.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220312_175408.pdf",
+        "sha256": "f73725f005518ecc689d4878842b8102453ef90e491fe189f8d321d6a83f89ae",
+        "bytes": "8269318",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_313.pdf",
+      "sha256": "4abab754321f0b8975f4f0048f1fef6e7754d7708a8171913cc9b1cb66332baa",
+      "bytes": 8059438,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_313.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220312_173500.pdf",
+        "sha256": "4abab754321f0b8975f4f0048f1fef6e7754d7708a8171913cc9b1cb66332baa",
+        "bytes": "8059438",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_314.pdf",
+      "sha256": "c73159c92e46941873c6eb1e865e94714cfa3a3506c807cf146bdb080285bb0e",
+      "bytes": 7434898,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_314.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220312_173413.pdf",
+        "sha256": "c73159c92e46941873c6eb1e865e94714cfa3a3506c807cf146bdb080285bb0e",
+        "bytes": "7434898",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_325.pdf",
+      "sha256": "e3bad47d618456510c7fa5c49792344836dc9e36bfe8587d9b66a5a886e52c30",
+      "bytes": 7271947,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_325.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220312_171623.pdf",
+        "sha256": "e3bad47d618456510c7fa5c49792344836dc9e36bfe8587d9b66a5a886e52c30",
+        "bytes": "7271947",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_326.pdf",
+      "sha256": "3cd9f051ea649df8f375a55a36b875c396ede352cdd3831b421ee31ea5b94b8d",
+      "bytes": 7854493,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_326.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220312_171532.pdf",
+        "sha256": "3cd9f051ea649df8f375a55a36b875c396ede352cdd3831b421ee31ea5b94b8d",
+        "bytes": "7854493",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_335.pdf",
+      "sha256": "eee81f41a2ea5157231cf3cba6629eef360a64a3ae4db9be9426bc387f158d83",
+      "bytes": 4111516,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_335.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220312_165726.pdf",
+        "sha256": "eee81f41a2ea5157231cf3cba6629eef360a64a3ae4db9be9426bc387f158d83",
+        "bytes": "4111516",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_351.pdf",
+      "sha256": "ac87f80885896da11d3498abc0e6ac162c0b979c45d1ee4a1f1c712357cf721d",
+      "bytes": 11468421,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_351.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220312_163243.pdf",
+        "sha256": "ac87f80885896da11d3498abc0e6ac162c0b979c45d1ee4a1f1c712357cf721d",
+        "bytes": "11468421",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_352.pdf",
+      "sha256": "543910e19aca3b009a878e9a5e18da6a88c40a6f1aa7e0981b4b2c9d419e3c49",
+      "bytes": 11490317,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_352.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220312_163139.pdf",
+        "sha256": "543910e19aca3b009a878e9a5e18da6a88c40a6f1aa7e0981b4b2c9d419e3c49",
+        "bytes": "11490317",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/affidavits/document_359.pdf",
+      "sha256": "e385ef98b97c01b153342886914bd9fa8f804abd8ab4d642e0830ac0ec585a4e",
+      "bytes": 4491937,
+      "acquisition": {
+        "path": "data/raw/sec/urban/affidavits/document_359.pdf",
+        "url": "https://cms.bhubaneswarone.in/uploadDocuments/Directory/Affidavits Submitted By The Candidates For ULB Election 2022/Directory20220312_161540.pdf",
+        "sha256": "e385ef98b97c01b153342886914bd9fa8f804abd8ab4d642e0830ac0ec585a4e",
+        "bytes": "4491937",
+        "fetched_at_utc": "2026-11-09T08:04:38Z",
+        "method": "live",
+        "copied_from": "",
+        "source": "cms.bhubaneswarone.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/bmc_affidavits.html",
+      "sha256": "7b14cbf8df163b212a511f2ae4e8f5b781433f81fa406ccfea0d518881fc17d7",
+      "bytes": 267973,
+      "acquisition": {
+        "path": "data/raw/sec/urban/bmc_affidavits.html",
+        "url": "https://www.bmc.gov.in/public-disclosure/1273",
+        "sha256": "7b14cbf8df163b212a511f2ae4e8f5b781433f81fa406ccfea0d518881fc17d7",
+        "bytes": "267973",
+        "fetched_at_utc": "2026-11-09T07:55:21.178143+00:00",
+        "method": "live",
+        "copied_from": "",
+        "source": "www.bmc.gov.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/bmc_corporators.html",
+      "sha256": "6c66ac328b45765584d9efad9ce9e328153319051f87f9f6bc0f3054d80d8605",
+      "bytes": 36237,
+      "acquisition": {
+        "path": "data/raw/sec/urban/bmc_corporators.html",
+        "url": "https://www.bmc.gov.in/public-disclosure/1741",
+        "sha256": "6c66ac328b45765584d9efad9ce9e328153319051f87f9f6bc0f3054d80d8605",
+        "bytes": "36237",
+        "fetched_at_utc": "2026-11-09T07:55:22.528457+00:00",
+        "method": "live",
+        "copied_from": "",
+        "source": "www.bmc.gov.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/bmc_disclosure.html",
+      "sha256": "f3f282291066b75425c79696edc5a0c8f8d5cb17f2a2e0a41ed702b209a1b2e2",
+      "bytes": 52052,
+      "acquisition": {
+        "path": "data/raw/sec/urban/bmc_disclosure.html",
+        "url": "https://www.bmc.gov.in/public-disclosure",
+        "sha256": "f3f282291066b75425c79696edc5a0c8f8d5cb17f2a2e0a41ed702b209a1b2e2",
+        "bytes": "52052",
+        "fetched_at_utc": "2026-11-09T07:54:51.082244+00:00",
+        "method": "live",
+        "copied_from": "",
+        "source": "www.bmc.gov.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/corporators_2022.pdf",
+      "sha256": "6057f1d3302a402d7c8272e79061b825669d3ecff17194974941f80d369992ca",
+      "bytes": 86618,
+      "acquisition": {
+        "path": "data/raw/sec/urban/corporators_2022.pdf",
+        "url": "https://sec.odisha.gov.in/wp-content/uploads/2023/02/NAME-OF-ELECTED-CORPORATORS.pdf",
+        "sha256": "6057f1d3302a402d7c8272e79061b825669d3ecff17194974941f80d369992ca",
+        "bytes": "86618",
+        "fetched_at_utc": "2026-11-09T07:56:09.855920+00:00",
+        "method": "wayback",
+        "copied_from": "https://web.archive.org/web/20230504104506/http://sec.odisha.gov.in/wp-content/uploads/2023/02/NAME-OF-ELECTED-CORPORATORS.pdf",
+        "source": "sec.odisha.gov.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/raw/sec/urban/election_report_2022.pdf",
+      "sha256": "ff46603a36b7359623e5bdd5aaeee65bb1c091cfbaf74aefdd0ea88d4690cbd3",
+      "bytes": 7226575,
+      "acquisition": {
+        "path": "data/raw/sec/urban/election_report_2022.pdf",
+        "url": "https://sec.odisha.gov.in/wp-content/uploads/2023/11/ULBs_Final-2022-12-10-2023-FINAL_compressed.pdf",
+        "sha256": "ff46603a36b7359623e5bdd5aaeee65bb1c091cfbaf74aefdd0ea88d4690cbd3",
+        "bytes": "7226575",
+        "fetched_at_utc": "2026-11-09T07:56:09.864766+00:00",
+        "method": "wayback",
+        "copied_from": "https://web.archive.org/web/20240208161540/https://sec.odisha.gov.in/wp-content/uploads/2023/11/ULBs_Final-2022-12-10-2023-FINAL_compressed.pdf",
+        "source": "sec.odisha.gov.in",
+        "status": "200",
+        "duplicate_of": ""
+      }
+    },
+    {
+      "path": "data/search_log/urban/acquisition_receipts.json",
+      "sha256": "f8b92cc4af864ef97d0ccfb7d86e24d345556acb0b7b1aff44db9d52e247353a",
+      "bytes": 2448,
+      "acquisition": null
+    },
+    {
+      "path": "data/search_log/urban/affidavits/receipts.jsonl",
+      "sha256": "f9f3568de9efa9c15ab6b6927698f81ad662c335b1e5710f3d7a3242cdb01741",
+      "bytes": 36910,
+      "acquisition": null
+    }
+  ]
+}

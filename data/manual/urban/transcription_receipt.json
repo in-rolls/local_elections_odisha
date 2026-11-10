@@ -1,0 +1,11 @@
+{
+  "path": "data/manual/urban/corporators_2014_transcription.csv",
+  "sha256": "948f11b7523c56967600c95e66d668cb3cd66862065e06108a651652e2e96293",
+  "source_file": "data/raw/sec/files/unlisted/INFORMATION-OF-G.E-TO-ULB-2013-14-14-15-1.pdf",
+  "source_sha256": "1d68e46d5d00cefd47caea634219cea47b9e20434556b95fce8435a29f98f3b1",
+  "source_pages": [
+    71,
+    72
+  ],
+  "method": "Manual transcription from rendered original; names retained as printed, no sex inference."
+}

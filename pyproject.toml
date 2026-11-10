@@ -9,6 +9,7 @@ license = "MIT"
 license-files = ["LICENSE"]
 keywords = ["Odisha", "elections", "panchayats", "sarpanch", "reservation", "data"]
 dependencies = [
+    "beautifulsoup4>=4.13",
     "pandas>=2.3",
     "pyarrow>=21",
     "pdfplumber>=0.11",
@@ -21,7 +22,7 @@ Repository = "https://github.com/in-rolls/local_elections_odisha"
 Issues = "https://github.com/in-rolls/local_elections_odisha/issues"
 
 [dependency-groups]
-dev = ["ruff>=0.14"]
+dev = ["ruff>=0.14", "pytest>=8"]
 
 [tool.ruff]
 line-length = 88

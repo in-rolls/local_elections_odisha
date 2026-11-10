@@ -8,47 +8,58 @@
    "schema": [
     {
      "name": "year",
-     "type": "int64"
+     "type": "int64",
+     "nullable": true
     },
     {
      "name": "district",
-     "type": "large_string"
+     "type": "large_string",
+     "nullable": true
     },
     {
      "name": "block_serial",
-     "type": "large_string"
+     "type": "large_string",
+     "nullable": true
     },
     {
      "name": "block",
-     "type": "large_string"
+     "type": "large_string",
+     "nullable": true
     },
     {
      "name": "gram_panchayat",
-     "type": "large_string"
+     "type": "large_string",
+     "nullable": true
     },
     {
      "name": "winner",
-     "type": "large_string"
+     "type": "large_string",
+     "nullable": true
     },
     {
      "name": "winner_cell_merged",
-     "type": "bool"
+     "type": "bool",
+     "nullable": true
     },
     {
      "name": "source_file",
-     "type": "large_string"
+     "type": "large_string",
+     "nullable": true
     },
     {
      "name": "source_page",
-     "type": "int64"
+     "type": "int64",
+     "nullable": true
     },
     {
      "name": "source_row",
-     "type": "int64"
+     "type": "int64",
+     "nullable": true
     },
     {
      "name": "winner_is_note",
-     "type": "bool"
+     "type": "bool",
+     "nullable": true
     }
    ]
   },
@@ -59,47 +70,267 @@
    "schema": [
     {
      "name": "year",
-     "type": "int64"
+     "type": "int64",
+     "nullable": true
     },
     {
      "name": "district",
-     "type": "large_string"
+     "type": "large_string",
+     "nullable": true
     },
     {
      "name": "block_serial",
-     "type": "large_string"
+     "type": "large_string",
+     "nullable": true
     },
     {
      "name": "block",
-     "type": "large_string"
+     "type": "large_string",
+     "nullable": true
     },
     {
      "name": "gram_panchayat",
-     "type": "large_string"
+     "type": "large_string",
+     "nullable": true
     },
     {
      "name": "winner",
-     "type": "large_string"
+     "type": "large_string",
+     "nullable": true
     },
     {
      "name": "winner_cell_merged",
-     "type": "bool"
+     "type": "bool",
+     "nullable": true
     },
     {
      "name": "source_file",
-     "type": "large_string"
+     "type": "large_string",
+     "nullable": true
     },
     {
      "name": "source_page",
-     "type": "int64"
+     "type": "int64",
+     "nullable": true
     },
     {
      "name": "source_row",
-     "type": "int64"
+     "type": "int64",
+     "nullable": true
     },
     {
      "name": "winner_is_note",
-     "type": "bool"
+     "type": "bool",
+     "nullable": true
+    }
+   ]
+  },
+  {
+   "file": "release/urban/winners.parquet",
+   "sha256": "6253a57844c0677d9a01522e24bc38ca28b5b391bdeeb1bb30d1b69e42742010",
+   "rows": 294,
+   "schema": [
+    {
+     "name": "year",
+     "type": "int16",
+     "nullable": false
+    },
+    {
+     "name": "body",
+     "type": "string",
+     "nullable": false
+    },
+    {
+     "name": "ward_no",
+     "type": "string",
+     "nullable": false
+    },
+    {
+     "name": "winner",
+     "type": "string",
+     "nullable": false
+    },
+    {
+     "name": "winner_raw",
+     "type": "string",
+     "nullable": false
+    },
+    {
+     "name": "winner_basis",
+     "type": "string",
+     "nullable": false
+    },
+    {
+     "name": "winner_party",
+     "type": "string",
+     "nullable": true
+    },
+    {
+     "name": "winner_party_raw",
+     "type": "string",
+     "nullable": true
+    },
+    {
+     "name": "reserved_raw",
+     "type": "string",
+     "nullable": true
+    },
+    {
+     "name": "reserved_caste",
+     "type": "string",
+     "nullable": true
+    },
+    {
+     "name": "reserved_woman",
+     "type": "int8",
+     "nullable": true
+    },
+    {
+     "name": "reserved_basis",
+     "type": "string",
+     "nullable": false
+    },
+    {
+     "name": "winner_woman_raw",
+     "type": "string",
+     "nullable": true
+    },
+    {
+     "name": "winner_woman",
+     "type": "int8",
+     "nullable": true
+    },
+    {
+     "name": "winner_woman_basis",
+     "type": "string",
+     "nullable": false
+    },
+    {
+     "name": "source_path",
+     "type": "string",
+     "nullable": false
+    },
+    {
+     "name": "source_sha256",
+     "type": "string",
+     "nullable": false
+    },
+    {
+     "name": "source_page",
+     "type": "int16",
+     "nullable": false
+    },
+    {
+     "name": "source_column",
+     "type": "int16",
+     "nullable": true
+    },
+    {
+     "name": "source_row",
+     "type": "int16",
+     "nullable": false
+    },
+    {
+     "name": "extraction_method",
+     "type": "string",
+     "nullable": false
+    },
+    {
+     "name": "raw_record_json",
+     "type": "string",
+     "nullable": false
+    }
+   ]
+  },
+  {
+   "file": "release/urban/affidavit_documents.parquet",
+   "sha256": "a6a2786de6d3634c5277eec8de1b7e104ef9be5294ec751d70dbe403d6e9de3c",
+   "rows": 365,
+   "schema": [
+    {
+     "name": "year",
+     "type": "int16",
+     "nullable": false
+    },
+    {
+     "name": "body",
+     "type": "string",
+     "nullable": false
+    },
+    {
+     "name": "document_serial",
+     "type": "int16",
+     "nullable": false
+    },
+    {
+     "name": "title",
+     "type": "string",
+     "nullable": false
+    },
+    {
+     "name": "title_raw",
+     "type": "string",
+     "nullable": false
+    },
+    {
+     "name": "office",
+     "type": "string",
+     "nullable": false
+    },
+    {
+     "name": "ward_no",
+     "type": "string",
+     "nullable": true
+    },
+    {
+     "name": "candidate_label",
+     "type": "string",
+     "nullable": false
+    },
+    {
+     "name": "document_url",
+     "type": "string",
+     "nullable": false
+    },
+    {
+     "name": "download_status",
+     "type": "string",
+     "nullable": false
+    },
+    {
+     "name": "downloaded_path",
+     "type": "string",
+     "nullable": true
+    },
+    {
+     "name": "downloaded_sha256",
+     "type": "string",
+     "nullable": true
+    },
+    {
+     "name": "downloaded_bytes",
+     "type": "int64",
+     "nullable": true
+    },
+    {
+     "name": "downloaded_at",
+     "type": "timestamp[us, tz=UTC]",
+     "nullable": true
+    },
+    {
+     "name": "pdf_pages",
+     "type": "int16",
+     "nullable": true
+    },
+    {
+     "name": "source_path",
+     "type": "string",
+     "nullable": false
+    },
+    {
+     "name": "source_sha256",
+     "type": "string",
+     "nullable": false
     }
    ]
   }
@@ -211,6 +442,17 @@
    "status": "not_run",
    "blocking": false,
    "detail": "0 of 30 sampled rows compared by eye with the PDF page; 0 disagree."
+  },
+  {
+   "check": "urban_release_contract",
+   "appeals_to": "internal",
+   "status": "pass",
+   "blocking": true,
+   "detail": "Urban input/output hashes, Arrow types and nullability, primary keys, source coverage and generated metadata agree with the contract.",
+   "rows": {
+    "winners": 294,
+    "affidavit_documents": 365
+   }
   }
  ]
 }

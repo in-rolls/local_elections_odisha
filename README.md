@@ -85,6 +85,19 @@ w22.groupby("district").size()
 w22[w22["winner_is_note"]]
 ```
 
+## Urban supplement
+
+The [urban source handoff](data/release/urban/README.md) adds 294 corporation
+winner records: Bhubaneswar and Cuttack in 2014, and Bhubaneswar, Cuttack and
+Berhampur in 2022. The 2022 source records reservation and party; neither
+winner table records sex. Historical reservation and geographic continuity
+remain unresolved. These records are separate from the sarpanch releases.
+
+The Bhubaneswar 2022 affidavit index has 365 document links, including 353
+councilor filings. A bounded exact-name/ward collection retained 55 filings
+for 42 winners as 54 distinct original PDFs. The source report documents
+versions, missing fields, receipts, and reproduction commands.
+
 ## Checks
 
 `make check` runs ruff, recomputes every raw file's sha256 against the fetch
@@ -100,6 +113,7 @@ published elsewhere; an `internal` one only shows the file agrees with itself.
 | `2022_sec_table_women_share` | external | pass | In the SEC district table, women's seats (SCW + STW + RW) are 3,475 of 6,794 (51.15%); the Odisha Gram Panchayat Act reserves at least half for women. Backward-class seats: 0 (no BC column; the 2021 High Court order). This checks the reference table, not a per-GP file. |
 | `2017_district_counts_vs_sec` | external | warn | Elected-sarpanch rows per district against GPs in the 2017 information book: 6,640 rows against 6,801 GPs; 4 district(s) differ. Sambalpur's link on the SEC site serves the Subarnapur file, and Malkangiri's file omits its seventh block; both are source gaps. |
 | `2022_hand_check` | external | not_run | 0 of 30 sampled rows compared by eye with the PDF page; 0 disagree. |
+| `urban_release_contract` | internal | pass | Urban input/output hashes, Arrow types and nullability, primary keys, source coverage and generated metadata agree with the contract. |
 
 <!-- checks:end -->
 

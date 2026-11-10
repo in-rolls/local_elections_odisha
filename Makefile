@@ -31,3 +31,15 @@ verify:
 	$(PY) -m local_elections_odisha.build.release verify
 
 check: lint verify
+
+.PHONY: urban-data urban-check urban-affidavits
+
+urban-data:
+	$(PY) -m local_elections_odisha.parse.urban
+	$(MAKE) manifest
+
+urban-check:
+	$(PY) -m pytest -q tests/test_urban.py
+
+urban-affidavits:
+	$(PY) -m local_elections_odisha.collect.urban_affidavits

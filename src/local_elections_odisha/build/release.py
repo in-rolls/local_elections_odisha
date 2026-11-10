@@ -32,6 +32,8 @@ HAND_CHECK = DATA / "checks/hand_check_2022.csv"
 OUTPUTS = [
     "release/2017/sarpanch_winners.parquet",
     "release/2022/sarpanch_winners.parquet",
+    "release/urban/winners.parquet",
+    "release/urban/affidavit_documents.parquet",
 ]
 KEY = ["district", "block", "gram_panchayat"]
 
@@ -153,8 +155,28 @@ def hand_check():
     )
 
 
+def urban_check():
+    from local_elections_odisha.parse import urban
+
+    try:
+        counts = urban.verify_release()
+    except (ValueError, OSError, KeyError) as exc:
+        return result(
+            "urban_release_contract", "internal", "fail", str(exc), blocking=True
+        )
+    return result(
+        "urban_release_contract",
+        "internal",
+        "pass",
+        "Urban input/output hashes, Arrow types and nullability, primary keys, "
+        "source coverage and generated metadata agree with the contract.",
+        blocking=True,
+        rows=counts,
+    )
+
+
 def run_checks():
-    return [*checks_2022(), *checks_2017(), hand_check()]
+    return [*checks_2022(), *checks_2017(), hand_check(), urban_check()]
 
 
 def outputs():
@@ -166,7 +188,7 @@ def outputs():
             "sha256": sha256(DATA / rel),
             "rows": pq.read_metadata(DATA / rel).num_rows,
             "schema": [
-                {"name": f.name, "type": str(f.type)}
+                {"name": f.name, "type": str(f.type), "nullable": f.nullable}
                 for f in pq.read_schema(DATA / rel)
             ],
         }
@@ -224,6 +246,8 @@ def write():
     if problems:
         raise SystemExit("\n".join(problems))
     checks = run_checks()
+    if any(c["blocking"] and c["status"] == "fail" for c in checks):
+        raise SystemExit("Cannot publish manifest with failing blocking checks")
     MANIFEST.write_text(
         json.dumps(
             {"format_version": 1, "outputs": outputs(), "checks": checks},

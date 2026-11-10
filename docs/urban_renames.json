@@ -1,0 +1,103 @@
+{
+  "scope": "Urban supplement only; raw originals and unrelated rural releases are unchanged. No compatibility aliases.",
+  "paths": [
+    {
+      "old_path": "data/reference/urban/corporators_2014_transcription.csv",
+      "new_path": "data/manual/urban/corporators_2014_transcription.csv",
+      "old_sha256": "948f11b7523c56967600c95e66d668cb3cd66862065e06108a651652e2e96293",
+      "action": "move",
+      "new_sha256": "948f11b7523c56967600c95e66d668cb3cd66862065e06108a651652e2e96293"
+    },
+    {
+      "old_path": "data/reference/urban/transcription_receipt.json",
+      "new_path": "data/manual/urban/transcription_receipt.json",
+      "old_sha256": "58e2bbbac971ee820bcf22a51fe29175d2f950db56aa9bb1e221067ccb9809f3",
+      "action": "move",
+      "new_sha256": "5aa9a64807c56f4171c1e9edfc2600b6257210c035dd018f74e1b866268981cc"
+    },
+    {
+      "old_path": "data/reference/urban/acquisition_receipts.json",
+      "new_path": "data/search_log/urban/acquisition_receipts.json",
+      "old_sha256": "f8b92cc4af864ef97d0ccfb7d86e24d345556acb0b7b1aff44db9d52e247353a",
+      "action": "move",
+      "new_sha256": "f8b92cc4af864ef97d0ccfb7d86e24d345556acb0b7b1aff44db9d52e247353a"
+    },
+    {
+      "old_path": "data/reference/urban/affidavits/receipts.jsonl",
+      "new_path": "data/search_log/urban/affidavits/receipts.jsonl",
+      "old_sha256": "f9f3568de9efa9c15ab6b6927698f81ad662c335b1e5710f3d7a3242cdb01741",
+      "action": "move",
+      "new_sha256": "f9f3568de9efa9c15ab6b6927698f81ad662c335b1e5710f3d7a3242cdb01741"
+    },
+    {
+      "old_path": "data/reference/urban/collection_limits.json",
+      "new_path": "data/search_log/urban/collection_limits.json",
+      "old_sha256": "b8bc0bd1a649afacf927fbe62e583521688f045b2e498fb42bb0c45953ccca15",
+      "action": "move",
+      "new_sha256": "b8bc0bd1a649afacf927fbe62e583521688f045b2e498fb42bb0c45953ccca15"
+    },
+    {
+      "old_path": "data/reference/urban/README.md",
+      "new_path": "data/release/urban/README.md",
+      "old_sha256": "a88c9db1fbf5b452b9d6acd115a1c345c5952710147a7b7add05d98426892ec0",
+      "action": "move",
+      "new_sha256": "3c54db4405d96ed29b95c43aa58494b0727cee1c3154bfba75b62d690821a393"
+    },
+    {
+      "old_path": "data/reference/urban/dictionary.csv",
+      "new_path": "data/release/urban/dictionary.csv",
+      "old_sha256": "a46f7cba975979e286dcb284b859a6e26d5c0c1b0c9d5ca67cf2b0db1e893594",
+      "action": "remove regenerated alias",
+      "new_sha256": "f87f983c51ef29a88e1e3816250c4ed8e4ba6af0cfe36d55c9718f2601098543"
+    },
+    {
+      "old_path": "data/release/urban/affidavit_documents_2022.parquet",
+      "new_path": "data/release/urban/affidavit_documents.parquet",
+      "old_sha256": "ee335d997056c1d92fa00597dc51dd3437e791816272c2ee4beafe9e25d123c4",
+      "action": "remove regenerated alias",
+      "new_sha256": "a6a2786de6d3634c5277eec8de1b7e104ef9be5294ec751d70dbe403d6e9de3c"
+    },
+    {
+      "old_path": "data/reference/urban/affidavits/frame.json",
+      "new_path": null,
+      "old_sha256": "ccf35429e532ed18b76b8d874b7c368b7dafebe89b9800deb7efbecd3102cf5f",
+      "action": "remove regenerated alias"
+    }
+  ],
+  "winner_fields": {
+    "city": "body (full printed corporation name)",
+    "ward_no": "ward_no (string, previously int16)",
+    "winner_name_raw": "winner (same normalized values); winner_raw adds original cells",
+    "party_raw": "winner_party (same normalized values); winner_party_raw adds original cells",
+    "reservation_raw": "reserved_raw",
+    "reservation_category": "reserved_caste (General becomes NONE)",
+    "is_women_reserved": "reserved_woman (nullable Int8, 0/1/null)",
+    "winner_sex_recorded": "winner_woman_raw",
+    "is_woman": "winner_woman (nullable Int8, 0/1/null)",
+    "source_file": "source_path",
+    "source_pdf_page": "source_page"
+  },
+  "document_fields": {
+    "ward_no": "ward_no (nullable string, previously int16)",
+    "title_raw": "title (same normalized values); title_raw now preserves exact link text",
+    "candidate_label_raw": "candidate_label",
+    "downloaded_file": "downloaded_path",
+    "source_file": "source_path"
+  },
+  "added_fields": [
+    "winner_basis",
+    "reserved_basis",
+    "winner_woman_basis",
+    "affidavit year and body",
+    "downloaded_at (timestamp[us, UTC])",
+    "downloaded_bytes (int64)"
+  ],
+  "removed_generated_frame": "Exact-name/ward selection is recomputed by collect.urban_affidavits.frame; acquisition receipts remain preserved.",
+  "manual_inputs": "Pinned transcription bytes and original headers preserved; converted once at the parsing boundary.",
+  "value_preservation": {
+    "winner_rows_checked": 294,
+    "document_rows_checked": 365,
+    "result": "All prior values preserved under the documented field/type mapping; new raw fields additionally retain unnormalized cells.",
+    "manual_csv_bytes_unchanged": true
+  }
+}

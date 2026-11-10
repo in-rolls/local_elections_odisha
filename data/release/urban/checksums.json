@@ -1,0 +1,8 @@
+{
+  "winners.parquet": "6253a57844c0677d9a01522e24bc38ca28b5b391bdeeb1bb30d1b69e42742010",
+  "affidavit_documents.parquet": "a6a2786de6d3634c5277eec8de1b7e104ef9be5294ec751d70dbe403d6e9de3c",
+  "schema.json": "9a8402f69327533d33c061d1ca4d4a78bc9bf7ac24b1539b831afe050d7698b6",
+  "profile.json": "095ade0d6b62b6c46dbac638a89c6e5371124e47b02b005c47e1dbc527e7af25",
+  "sources.json": "73c13eedeb2fe48ce3764fd75464e80bb6f2f6847cf9989c4182f0fc010fdc78",
+  "dictionary.csv": "f87f983c51ef29a88e1e3816250c4ed8e4ba6af0cfe36d55c9718f2601098543"
+}

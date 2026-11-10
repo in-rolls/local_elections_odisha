@@ -1,0 +1,331 @@
+{
+  "format_version": 2,
+  "scope": "Supplemental urban sources; incomplete attributes do not satisfy the pooled master schema.",
+  "tables": {
+    "winners": {
+      "path": "winners.parquet",
+      "unit": "one published ward councilor per election, corporation and ward",
+      "primary_key": [
+        "year",
+        "body",
+        "ward_no"
+      ],
+      "rows": 294,
+      "fields": [
+        {
+          "name": "year",
+          "nullable": false,
+          "description": "Election year, not collection year.",
+          "values": null,
+          "type": "int16"
+        },
+        {
+          "name": "body",
+          "nullable": false,
+          "description": "Municipal corporation named by the source.",
+          "values": null,
+          "type": "string"
+        },
+        {
+          "name": "ward_no",
+          "nullable": false,
+          "description": "Printed ward identifier; not a cross-election geographic key.",
+          "values": null,
+          "type": "string"
+        },
+        {
+          "name": "winner",
+          "nullable": false,
+          "description": "Printed winner name, with whitespace normalized.",
+          "values": null,
+          "type": "string"
+        },
+        {
+          "name": "winner_raw",
+          "nullable": false,
+          "description": "Unnormalized name cell or checked historical transcription.",
+          "values": null,
+          "type": "string"
+        },
+        {
+          "name": "winner_basis",
+          "nullable": false,
+          "description": "Winner selection evidence.",
+          "values": [
+            "published"
+          ],
+          "type": "string"
+        },
+        {
+          "name": "winner_party",
+          "nullable": true,
+          "description": "Printed party with whitespace normalized; absent in 2014.",
+          "values": null,
+          "type": "string"
+        },
+        {
+          "name": "winner_party_raw",
+          "nullable": true,
+          "description": "Unnormalized party cell; absent in 2014.",
+          "values": null,
+          "type": "string"
+        },
+        {
+          "name": "reserved_raw",
+          "nullable": true,
+          "description": "Original seat reservation cell; absent in 2014.",
+          "values": null,
+          "type": "string"
+        },
+        {
+          "name": "reserved_caste",
+          "nullable": true,
+          "description": "Seat caste reservation; NONE means no caste reservation, not missing.",
+          "values": [
+            "NONE",
+            "SC",
+            "ST",
+            "BC"
+          ],
+          "type": "string"
+        },
+        {
+          "name": "reserved_woman",
+          "nullable": true,
+          "description": "1 if women-reserved, 0 if not; null when the source does not state it.",
+          "values": [
+            0,
+            1
+          ],
+          "type": "int8"
+        },
+        {
+          "name": "reserved_basis",
+          "nullable": false,
+          "description": "Evidence for the reservation fields.",
+          "values": [
+            "source_cell",
+            "not_reported"
+          ],
+          "type": "string"
+        },
+        {
+          "name": "winner_woman_raw",
+          "nullable": true,
+          "description": "Recorded person sex cell; unavailable in both winner sources.",
+          "values": null,
+          "type": "string"
+        },
+        {
+          "name": "winner_woman",
+          "nullable": true,
+          "description": "Recorded winner sex: 1 woman, 0 man, null unknown; never inferred from reservation.",
+          "values": [
+            0,
+            1
+          ],
+          "type": "int8"
+        },
+        {
+          "name": "winner_woman_basis",
+          "nullable": false,
+          "description": "Evidence for winner sex; neither source records it.",
+          "values": [
+            "not_reported"
+          ],
+          "type": "string"
+        },
+        {
+          "name": "source_path",
+          "nullable": false,
+          "description": "Original source path relative to the repository root.",
+          "values": null,
+          "type": "string"
+        },
+        {
+          "name": "source_sha256",
+          "nullable": false,
+          "description": "SHA-256 of the complete original source payload.",
+          "values": null,
+          "type": "string"
+        },
+        {
+          "name": "source_page",
+          "nullable": false,
+          "description": "One-based physical PDF page.",
+          "values": null,
+          "type": "int16"
+        },
+        {
+          "name": "source_column",
+          "nullable": true,
+          "description": "One-based left/right table column in 2014; not applicable in 2022.",
+          "values": null,
+          "type": "int16"
+        },
+        {
+          "name": "source_row",
+          "nullable": false,
+          "description": "One-based row within a 2014 column or 2022 extracted table, including table headers.",
+          "values": null,
+          "type": "int16"
+        },
+        {
+          "name": "extraction_method",
+          "nullable": false,
+          "description": "How the source row was read.",
+          "values": [
+            "visual_transcription",
+            "pdf_table_text"
+          ],
+          "type": "string"
+        },
+        {
+          "name": "raw_record_json",
+          "nullable": false,
+          "description": "Original PDF cells or historical transcription row as JSON.",
+          "values": null,
+          "type": "string"
+        }
+      ]
+    },
+    "affidavit_documents": {
+      "path": "affidavit_documents.parquet",
+      "unit": "one affidavit document link; repeated filings remain distinct",
+      "primary_key": [
+        "year",
+        "body",
+        "document_serial"
+      ],
+      "rows": 365,
+      "fields": [
+        {
+          "name": "year",
+          "nullable": false,
+          "description": "Election year, not collection year.",
+          "values": null,
+          "type": "int16"
+        },
+        {
+          "name": "body",
+          "nullable": false,
+          "description": "Municipal corporation named by the source.",
+          "values": null,
+          "type": "string"
+        },
+        {
+          "name": "document_serial",
+          "nullable": false,
+          "description": "Printed directory ordinal; a document key, not a person identifier.",
+          "values": null,
+          "type": "int16"
+        },
+        {
+          "name": "title",
+          "nullable": false,
+          "description": "Directory link text with whitespace normalized.",
+          "values": null,
+          "type": "string"
+        },
+        {
+          "name": "title_raw",
+          "nullable": false,
+          "description": "Unmodified text content of the directory link.",
+          "values": null,
+          "type": "string"
+        },
+        {
+          "name": "office",
+          "nullable": false,
+          "description": "Office named in the filing label.",
+          "values": [
+            "mayor",
+            "ward_councilor"
+          ],
+          "type": "string"
+        },
+        {
+          "name": "ward_no",
+          "nullable": true,
+          "description": "Ward identifier from the directory label; null for mayor filings.",
+          "values": null,
+          "type": "string"
+        },
+        {
+          "name": "candidate_label",
+          "nullable": false,
+          "description": "Candidate portion of the normalized directory label; copy/version suffixes retained.",
+          "values": null,
+          "type": "string"
+        },
+        {
+          "name": "document_url",
+          "nullable": false,
+          "description": "Original document href, including spaces.",
+          "values": null,
+          "type": "string"
+        },
+        {
+          "name": "download_status",
+          "nullable": false,
+          "description": "Status in the retained receipt ledger.",
+          "values": [
+            "saved",
+            "not_attempted",
+            "failed"
+          ],
+          "type": "string"
+        },
+        {
+          "name": "downloaded_path",
+          "nullable": true,
+          "description": "Canonical stored PDF path; byte-identical source links can share it.",
+          "values": null,
+          "type": "string"
+        },
+        {
+          "name": "downloaded_sha256",
+          "nullable": true,
+          "description": "SHA-256 of the downloaded PDF.",
+          "values": null,
+          "type": "string"
+        },
+        {
+          "name": "downloaded_bytes",
+          "nullable": true,
+          "description": "Downloaded payload size in bytes.",
+          "values": null,
+          "type": "int64"
+        },
+        {
+          "name": "downloaded_at",
+          "nullable": true,
+          "description": "UTC request time from the original download receipt.",
+          "values": null,
+          "type": "timestamp[us, tz=UTC]"
+        },
+        {
+          "name": "pdf_pages",
+          "nullable": true,
+          "description": "Readable PDF page count at acquisition.",
+          "values": null,
+          "type": "int16"
+        },
+        {
+          "name": "source_path",
+          "nullable": false,
+          "description": "Original source path relative to the repository root.",
+          "values": null,
+          "type": "string"
+        },
+        {
+          "name": "source_sha256",
+          "nullable": false,
+          "description": "SHA-256 of the complete original source payload.",
+          "values": null,
+          "type": "string"
+        }
+      ]
+    }
+  }
+}

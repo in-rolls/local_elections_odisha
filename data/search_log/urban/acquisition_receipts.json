@@ -1,0 +1,56 @@
+[
+  {
+    "url": "https://sec.odisha.gov.in/wp-content/uploads/2023/02/NAME-OF-ELECTED-CORPORATORS.pdf",
+    "capture_timestamp": "2023-05-04 10:45:06+00:00",
+    "archive_url": "https://web.archive.org/web/20230504104506/http://sec.odisha.gov.in/wp-content/uploads/2023/02/NAME-OF-ELECTED-CORPORATORS.pdf",
+    "bytes": 86618,
+    "digest": "6ADPG5C5Z5CUD56G4CCUPN2WUEIW5B26",
+    "path": "data/raw/sec/urban/corporators_2022.pdf",
+    "sha256": "6057f1d3302a402d7c8272e79061b825669d3ecff17194974941f80d369992ca",
+    "fetched_at_utc": "2026-11-09T07:56:09.855920+00:00",
+    "method": "wayback",
+    "status": 200
+  },
+  {
+    "url": "https://sec.odisha.gov.in/wp-content/uploads/2023/11/ULBs_Final-2022-12-10-2023-FINAL_compressed.pdf",
+    "capture_timestamp": "2024-02-08 16:15:40+00:00",
+    "archive_url": "https://web.archive.org/web/20240208161540/https://sec.odisha.gov.in/wp-content/uploads/2023/11/ULBs_Final-2022-12-10-2023-FINAL_compressed.pdf",
+    "bytes": 7226575,
+    "digest": "ILUBSUJVF6RSAPTEGIBZLBFOK2BUWDSK",
+    "path": "data/raw/sec/urban/election_report_2022.pdf",
+    "sha256": "ff46603a36b7359623e5bdd5aaeee65bb1c091cfbaf74aefdd0ea88d4690cbd3",
+    "fetched_at_utc": "2026-11-09T07:56:09.864766+00:00",
+    "method": "wayback",
+    "status": 200
+  },
+  {
+    "url": "https://www.bmc.gov.in/public-disclosure",
+    "response_url": "https://www.bmc.gov.in/public-disclosure",
+    "status": 200,
+    "path": "data/raw/sec/urban/bmc_disclosure.html",
+    "sha256": "f3f282291066b75425c79696edc5a0c8f8d5cb17f2a2e0a41ed702b209a1b2e2",
+    "bytes": 52052,
+    "fetched_at_utc": "2026-11-09T07:54:51.082244+00:00",
+    "method": "live"
+  },
+  {
+    "url": "https://www.bmc.gov.in/public-disclosure/1273",
+    "response_url": "https://www.bmc.gov.in/public-disclosure/1273",
+    "status": 200,
+    "path": "data/raw/sec/urban/bmc_affidavits.html",
+    "sha256": "7b14cbf8df163b212a511f2ae4e8f5b781433f81fa406ccfea0d518881fc17d7",
+    "bytes": 267973,
+    "fetched_at_utc": "2026-11-09T07:55:21.178143+00:00",
+    "method": "live"
+  },
+  {
+    "url": "https://www.bmc.gov.in/public-disclosure/1741",
+    "response_url": "https://www.bmc.gov.in/public-disclosure/1741",
+    "status": 200,
+    "path": "data/raw/sec/urban/bmc_corporators.html",
+    "sha256": "6c66ac328b45765584d9efad9ce9e328153319051f87f9f6bc0f3054d80d8605",
+    "bytes": 36237,
+    "fetched_at_utc": "2026-11-09T07:55:22.528457+00:00",
+    "method": "live"
+  }
+]

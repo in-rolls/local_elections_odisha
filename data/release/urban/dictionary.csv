@@ -1,0 +1,40 @@
+table,column,type,nullable,primary_key,allowed_values,definition
+winners,year,int16,False,True,,"Election year, not collection year."
+winners,body,string,False,True,,Municipal corporation named by the source.
+winners,ward_no,string,False,True,,Printed ward identifier; not a cross-election geographic key.
+winners,winner,string,False,False,,"Printed winner name, with whitespace normalized."
+winners,winner_raw,string,False,False,,Unnormalized name cell or checked historical transcription.
+winners,winner_basis,string,False,False,"[""published""]",Winner selection evidence.
+winners,winner_party,string,True,False,,Printed party with whitespace normalized; absent in 2014.
+winners,winner_party_raw,string,True,False,,Unnormalized party cell; absent in 2014.
+winners,reserved_raw,string,True,False,,Original seat reservation cell; absent in 2014.
+winners,reserved_caste,string,True,False,"[""NONE"", ""SC"", ""ST"", ""BC""]","Seat caste reservation; NONE means no caste reservation, not missing."
+winners,reserved_woman,int8,True,False,"[0, 1]","1 if women-reserved, 0 if not; null when the source does not state it."
+winners,reserved_basis,string,False,False,"[""source_cell"", ""not_reported""]",Evidence for the reservation fields.
+winners,winner_woman_raw,string,True,False,,Recorded person sex cell; unavailable in both winner sources.
+winners,winner_woman,int8,True,False,"[0, 1]","Recorded winner sex: 1 woman, 0 man, null unknown; never inferred from reservation."
+winners,winner_woman_basis,string,False,False,"[""not_reported""]",Evidence for winner sex; neither source records it.
+winners,source_path,string,False,False,,Original source path relative to the repository root.
+winners,source_sha256,string,False,False,,SHA-256 of the complete original source payload.
+winners,source_page,int16,False,False,,One-based physical PDF page.
+winners,source_column,int16,True,False,,One-based left/right table column in 2014; not applicable in 2022.
+winners,source_row,int16,False,False,,"One-based row within a 2014 column or 2022 extracted table, including table headers."
+winners,extraction_method,string,False,False,"[""visual_transcription"", ""pdf_table_text""]",How the source row was read.
+winners,raw_record_json,string,False,False,,Original PDF cells or historical transcription row as JSON.
+affidavit_documents,year,int16,False,True,,"Election year, not collection year."
+affidavit_documents,body,string,False,True,,Municipal corporation named by the source.
+affidavit_documents,document_serial,int16,False,True,,"Printed directory ordinal; a document key, not a person identifier."
+affidavit_documents,title,string,False,False,,Directory link text with whitespace normalized.
+affidavit_documents,title_raw,string,False,False,,Unmodified text content of the directory link.
+affidavit_documents,office,string,False,False,"[""mayor"", ""ward_councilor""]",Office named in the filing label.
+affidavit_documents,ward_no,string,True,False,,Ward identifier from the directory label; null for mayor filings.
+affidavit_documents,candidate_label,string,False,False,,Candidate portion of the normalized directory label; copy/version suffixes retained.
+affidavit_documents,document_url,string,False,False,,"Original document href, including spaces."
+affidavit_documents,download_status,string,False,False,"[""saved"", ""not_attempted"", ""failed""]",Status in the retained receipt ledger.
+affidavit_documents,downloaded_path,string,True,False,,Canonical stored PDF path; byte-identical source links can share it.
+affidavit_documents,downloaded_sha256,string,True,False,,SHA-256 of the downloaded PDF.
+affidavit_documents,downloaded_bytes,int64,True,False,,Downloaded payload size in bytes.
+affidavit_documents,downloaded_at,"timestamp[us, tz=UTC]",True,False,,UTC request time from the original download receipt.
+affidavit_documents,pdf_pages,int16,True,False,,Readable PDF page count at acquisition.
+affidavit_documents,source_path,string,False,False,,Original source path relative to the repository root.
+affidavit_documents,source_sha256,string,False,False,,SHA-256 of the complete original source payload.
