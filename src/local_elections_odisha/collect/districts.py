@@ -62,7 +62,7 @@ DISTRICTS = [
 QUERIES = ["reservation", "sarpanch", "sarapanch"]
 MAX_PAGES = 10
 HIT = re.compile(r'<h3[^>]*>\s*<a href="([^"]+)"[^>]*>(.*?)</a>', re.S)
-# The notice's own attachment is a link labelled "Download (size)" or "View
+# The notice's own attachment is a link labeled "Download (size)" or "View
 # Document (size)", or one wrapped in <span class="file ...">; the menus on
 # every page link unrelated PDFs.
 PDF = re.compile(
