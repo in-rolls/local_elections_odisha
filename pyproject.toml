@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "Odisha gram panchayat sarpanch elections, with seat reservation, winners and sources"
 readme = "README.md"
 requires-python = ">=3.12"
-authors = [{ name = "Gaurav Sood", email = "contact@gsood.com" }]
+authors = [{ name = "Gaurav Sood" }]
 license = "MIT"
 license-files = ["LICENSE"]
 keywords = ["Odisha", "elections", "panchayats", "sarpanch", "reservation", "data"]
